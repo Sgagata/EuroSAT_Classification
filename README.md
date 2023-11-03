@@ -1,1 +1,1 @@
-# EurpSAT_Classification
+# EuroSAT_Classification
