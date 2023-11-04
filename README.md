@@ -2,6 +2,15 @@
 
 [EuroSAT](https://zenodo.org/records/7711810#.ZAm3k-zMKEA) is a land use and land cover classification dataset. The dataset is based on Sentinel-2 satellite imagery covering 13 spectral bands and consists of 10 Land Use and Land Cover (LULC) classes with a total of 27,000 labeled and geo-referenced images. 
 
+## Task Description
+- Perform **supervised Machine Learning (ML)** on this dataset. 
+- use **Dask** in your implementation. 
+- Create relevant features and analyse them using some visualizations and statistical tools. You can start with features representing the mean and range of spectral bands in these images. You are free to explore more relevant features.
+- Split the dataset into training, validation, and test sets.
+- Choose an appropriate ML algorithm.
+- Train and assess the model's performance.
+- Adjust the model's hyperparameters to optimize its performance.
+
 The aim of this exercise was to **perform supervised ML on data from the EuroSAT dataset**. In order to achieve it, first, the data had to be prepared: the mean and ranges of the bands in the per-pixel per-file were extracted. Subsequently, new features were derived: NDVI, NDWI, EVI, SAVI. This process is shown in the notebook ```Data_Preprocessing```.
 
 Next, two supervised ML approaches were tested in order to classify the data. These two approaches were Random Forest and Multilayer Perceptron. Notebooks ```TaskReport_Random_Forest``` and ```TaskScript_Random_Forest``` show the process for the Random Forest approach, and the notebook ```MLP_Sklearn``` shows the process for MLP.  
